@@ -10,6 +10,10 @@
             margin: 0;
             padding: 0;
         }
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
         header {
             background-color: #333;
             color: white;
@@ -35,12 +39,17 @@
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
         .container {
             padding: 20px;
+            min-height: calc(100vh - 140px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
         }
         .carousel {
             width: 100%;
@@ -126,24 +135,11 @@
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-
         <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </div>
 
     <footer>
-        <p>&copy; 2024 John's Web App</p>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
     </footer>
 
     <script>
