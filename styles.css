@@ -99,6 +99,27 @@ tr:hover {
     background-color: #f1f1f1;
 }
 
+body.dark-mode table {
+    border-color: #444;
+}
+
+body.dark-mode th {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode tr:nth-child(even) {
+    background-color: #222;
+}
+
+body.dark-mode tr:nth-child(odd) {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode tr:hover {
+    background-color: #555;
+}
+
 .video-wrapper {
     position: relative;
     width: 100%;
