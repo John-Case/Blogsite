@@ -31,16 +31,15 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
 }
 
 nav ul li a:hover {
-    background-color: #444;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
+    background-color: #555;
+    transform: scale(1.1);
 }
-
 
 footer {
     background-color: #333;
@@ -62,13 +61,20 @@ footer {
 }
 
 .carousel {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    position: relative;
 }
 
 .carousel img {
-    width: 100%;
+    max-width: 900px;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
     display: block;
 }
 
@@ -101,15 +107,8 @@ th, td {
     cursor: pointer;
     text-align: center;
     width: 150px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-h2 {
-    margin-top: 20px;
-}
-
-p {
-    line-height: 1.6;
+.dark-mode-toggle:hover {
+    background-color: #555;
 }
