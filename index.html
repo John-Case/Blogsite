@@ -65,20 +65,17 @@
 
     <script>
         function toggleDarkMode() {
-            const darkModeClass = 'dark-mode';
-            document.body.classList.toggle(darkModeClass);
-
-            if (document.body.classList.contains(darkModeClass)) {
-                window.localStorage.setItem('darkMode', 'true');
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'true');
             } else {
-                window.localStorage.setItem('darkMode', 'false');
+                localStorage.setItem('darkMode', 'false');
             }
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            const darkModeClass = 'dark-mode';
-            if (window.localStorage.getItem('darkMode') === 'true') {
-                document.body.classList.add(darkModeClass);
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.body.classList.add('dark-mode');
             }
         });
     </script>
